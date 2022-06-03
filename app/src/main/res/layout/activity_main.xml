@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/huddleui"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnGCorrection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Grammar Correction"
+        app:layout_constraintEnd_toEndOf="@+id/txtGetStarted"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/txtGetStarted"
+        app:layout_constraintTop_toBottomOf="@+id/txtGetStarted" />
+
+    <Button
+        android:id="@+id/btnGLearn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Grammar Learning"
+        app:layout_constraintEnd_toEndOf="@+id/btnGCorrection"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/btnGCorrection"
+        app:layout_constraintTop_toBottomOf="@+id/btnGCorrection" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Upload Files"
+        app:layout_constraintEnd_toEndOf="@+id/txtOptions"
+        app:layout_constraintStart_toStartOf="@+id/txtOptions"
+        app:layout_constraintTop_toBottomOf="@+id/txtOptions" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Settings"
+        app:layout_constraintEnd_toEndOf="@+id/btnUpload"
+        app:layout_constraintStart_toStartOf="@+id/btnUpload"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpload" />
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Welcome to Huddle!"
+        android:textColor="#FFFF"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="128dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtWelcome"
+        app:layout_constraintStart_toStartOf="@+id/txtWelcome"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome"
+        app:srcCompat="@drawable/huddle" />
+
+    <TextView
+        android:id="@+id/txtGetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Get Started"
+        app:layout_constraintEnd_toEndOf="@+id/imgLogo"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/imgLogo"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <TextView
+        android:id="@+id/txtOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Other Options"
+        app:layout_constraintEnd_toEndOf="@+id/btnGLearn"
+        app:layout_constraintStart_toStartOf="@+id/btnGLearn"
+        app:layout_constraintTop_toBottomOf="@+id/btnGLearn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
